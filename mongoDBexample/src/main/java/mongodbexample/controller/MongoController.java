@@ -29,7 +29,7 @@ public class MongoController {
 	
 	@GetMapping("/")
 	public ResponseEntity<List<Student>> getAllStudent(){
-		
+		System.out.println("MongoController");
 		return ResponseEntity.ok(this.repository.findAll());
 		
 	}
